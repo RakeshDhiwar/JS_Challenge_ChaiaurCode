@@ -1,4 +1,18 @@
 //Day 15: Closures
+
+    function innit() {
+        var name = "RD";
+        function displayName() {
+            console.log(name);
+        }
+        name = "RKS";
+        return displayName;
+    }    
+    let c = innit(); // here c is the closure
+    c();  //"RKS"
+
+
+
     //Activity 1: Understanding Closures
         //Task 1: Write a function that returns another function, where the inner function accesses a variable from the outer function's scope. Call the inner function and log the result.
         function outerFunction() {
